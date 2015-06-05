@@ -41,7 +41,9 @@ PROTOS_PATH = ../../protos
 
 vpath %.proto $(PROTOS_PATH)
 
-all: system-check route_guide_client route_guide_server
+all: system-check gen-cpp route_guide_client route_guide_server
+
+gen-cpp: route_guide.pb.cc route_guide.grpc.pb.cc
 
 route_guide_client: route_guide.pb.o route_guide.grpc.pb.o route_guide_client.o helper.o
 	$(CXX) $^ $(LDFLAGS) -o $@
