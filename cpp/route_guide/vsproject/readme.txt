@@ -23,3 +23,5 @@ additional library directories, under linker options in each project file:
 C:\local\grpc\vsprojects\Debug;C:\local\grpc\third_party\protobuf\vsprojects\Debug
 
 
+
+after building, the .json file needs to be moved into the .exe directory to run manually
