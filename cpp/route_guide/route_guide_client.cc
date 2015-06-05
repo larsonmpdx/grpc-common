@@ -209,6 +209,9 @@ class RouteGuideClient {
 
   bool GetOneFeature(const Point& point, Feature* feature) {
     ClientContext context;
+
+	context.set_deadline(std::chrono::system_clock::time_point(std::chrono::system_clock::now() + std::chrono::seconds(5)));    //n seconds from now
+
     Status status = stub_->GetFeature(&context, point, feature);
     if (!status.IsOk()) {
       std::cout << "GetFeature rpc failed." << std::endl;
@@ -246,11 +249,11 @@ int main(int argc, char** argv) {
   std::cout << "-------------- GetFeature --------------" << std::endl;
   guide.GetFeature();
   std::cout << "-------------- ListFeatures --------------" << std::endl;
-  guide.ListFeatures();
+//  guide.ListFeatures();
   std::cout << "-------------- RecordRoute --------------" << std::endl;
   guide.RecordRoute();
   std::cout << "-------------- RouteChat --------------" << std::endl;
-  guide.RouteChat();
+//  guide.RouteChat();
 
   return 0;
 }
