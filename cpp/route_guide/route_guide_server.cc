@@ -106,6 +106,18 @@ class RouteGuideImpl final : public RouteGuide::Service {
 
   Status GetFeature(ServerContext* context, const Point* point,
                     Feature* feature) override {
+
+	std::multimap<grpc::string, grpc::string>::const_iterator foo_iterator = context->client_metadata().find("foo");
+
+	if (foo_iterator != context->client_metadata().end())
+	{
+		std::cout << "client metadata for foo: " << foo_iterator->second << std::endl;
+	}
+	else
+	{
+		std::cout << "client metadata for foo not found" << std::endl;
+	}
+
     feature->set_name(GetFeatureName(*point, feature_list_));
     feature->mutable_location()->CopyFrom(*point);
     return Status::OK;
