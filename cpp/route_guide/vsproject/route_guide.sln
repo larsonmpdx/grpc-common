@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "route_guide_server", "route_guide_server\route_guide_server.vcxproj", "{DE42968B-9DFC-40D8-98CB-DCBD86885FE1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "route_guide_client", "route_guide_client\route_guide_client.vcxproj", "{1A4C22AB-A5CD-4BAD-A431-F6BDB3EA8192}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE42968B-9DFC-40D8-98CB-DCBD86885FE1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE42968B-9DFC-40D8-98CB-DCBD86885FE1}.Debug|Win32.Build.0 = Debug|Win32
+		{DE42968B-9DFC-40D8-98CB-DCBD86885FE1}.Release|Win32.ActiveCfg = Release|Win32
+		{DE42968B-9DFC-40D8-98CB-DCBD86885FE1}.Release|Win32.Build.0 = Release|Win32
+		{1A4C22AB-A5CD-4BAD-A431-F6BDB3EA8192}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1A4C22AB-A5CD-4BAD-A431-F6BDB3EA8192}.Debug|Win32.Build.0 = Debug|Win32
+		{1A4C22AB-A5CD-4BAD-A431-F6BDB3EA8192}.Release|Win32.ActiveCfg = Release|Win32
+		{1A4C22AB-A5CD-4BAD-A431-F6BDB3EA8192}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
